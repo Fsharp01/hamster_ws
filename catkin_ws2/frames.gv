@@ -1,0 +1,17 @@
+digraph G {
+"agent1/base_link" -> "agent1/camera_link"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 8504.530 sec old)\nBuffer length: 0.000 sec\n"];
+"agent1/odom" -> "agent1/base_link"[label="Broadcaster: /gazebo\nAverage rate: 47.852 Hz\nMost recent transform: 8504.513 ( 0.017 sec old)\nBuffer length: 4.284 sec\n"];
+"agent1/base_link" -> "agent1/lidar_link"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 8504.530 sec old)\nBuffer length: 0.000 sec\n"];
+"agent1/base_link" -> "agent1/imu_link"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 8504.530 sec old)\nBuffer length: 0.000 sec\n"];
+"map" -> "agent1/odom"[label="Broadcaster: /amcl\nAverage rate: 10.236 Hz\nMost recent transform: 8504.600 ( -0.070 sec old)\nBuffer length: 4.201 sec\n"];
+"agent1/front_left_wheel_steering" -> "agent1/front_left_wheel"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+"agent1/base_link" -> "agent1/front_left_wheel_steering"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+"agent1/front_right_wheel_steering" -> "agent1/front_right_wheel"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+"agent1/base_link" -> "agent1/front_right_wheel_steering"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+"agent1/base_link" -> "agent1/rear_left_wheel"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+"agent1/base_link" -> "agent1/rear_right_wheel"[label="Broadcaster: /agent1/robot_state_publisher\nAverage rate: 10.238 Hz\nMost recent transform: 8504.498 ( 0.032 sec old)\nBuffer length: 4.200 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 8504.530"[ shape=plaintext ] ;
+ }->"map";
+}

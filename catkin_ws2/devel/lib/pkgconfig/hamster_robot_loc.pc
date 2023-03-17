@@ -1,0 +1,8 @@
+prefix=/home/losi/catkin_ws2/devel
+
+Name: hamster_robot_loc
+Description: Description of hamster_robot_loc
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

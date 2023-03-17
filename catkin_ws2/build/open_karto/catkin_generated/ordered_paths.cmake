@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/losi/catkin_ws2/src/sparse_bundle_adjustment/include")

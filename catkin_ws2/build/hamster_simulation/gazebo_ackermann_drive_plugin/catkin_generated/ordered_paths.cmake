@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/opt/ros/noetic/lib;/home/losi/catkin_ws/devel/lib")

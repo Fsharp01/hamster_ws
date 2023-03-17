@@ -1,0 +1,8 @@
+prefix=/home/losi/catkin_ws2/devel
+
+Name: mapping_controller
+Description: Description of mapping_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

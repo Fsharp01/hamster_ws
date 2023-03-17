@@ -1,0 +1,8 @@
+prefix=/home/losi/catkin_ws2/devel
+
+Name: sparse_bundle_adjustment
+Description: Description of sparse_bundle_adjustment
+Version: 0.4.4
+Cflags: -I/home/losi/catkin_ws2/src/sparse_bundle_adjustment/include
+Libs: -L${prefix}/lib -lsba
+Requires: 
